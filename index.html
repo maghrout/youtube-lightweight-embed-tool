@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Youtube lightweight embed tool
+        </title>
+
+        <link rel="stylesheet" type="text/css" href="home-styles.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+    <body>
+        <div class="website">
+            <nav class="navbar">
+                <span class="navbar__title">Youtube Lightweight Embed Tool</span>
+                <div class="navbar__links">
+                    <a href="https://twitter.com/maghrout" class="navbar__link">Twitter</a>
+                    <a href="" class="navbar__link">Github</a>
+                </div>
+            </nav>
+            <div class="wrapper">
+                <div class="introduction">
+                    <h2>
+                        What this tool is for:
+                    </h2>
+                    <p class="introduction__text">
+                        This tool was made to allow people to easily implement a lightweight alternative to the embeddable code that YouTube provides. 
+                    </p>
+                    <p class="introduction__text">
+                        The idea for this tool stemmed from an obsession to optimise websites for lightning fast page speeds; You can read about it in the blog post <a class="normal-link" href="http://lean.codecomputerlove.com/make-your-own-lightweight-youtube-player/">here.</a>
+                    </p>
+                    <p class="introduction__text">
+                        This is a responsive tool and will work at any screen size. It will significantly reduce the initial load time of your web page and make for a better experience on mobile with a 3G or 4G connection.
+                    </p>
+                </div>
+                <div class="form">
+                    <label class="form__label">Insert YouTube URL here:</label>
+                    <input class="form__input" type="text" data-youtube-url>
+                    <input type="submit" class="form__submit" value="Generate" data-youtube-generate-button>
+                    <span hidden="hidden" class="form__error" data-youtube-error>Enter a correct URL please.</span>
+                </div>   
+                <div class="video" data-preview>
+                    
+                </div>
+                <div class="code" data-code>
+
+                </div>
+                <textarea hidden="hidden" rows="20" class="codebox" data-code-box>
+
+                </textarea>
+            </div>
+        </div>
+
+    <script src="scripts/handlebars.js"></script>
+    <script src="templates.js"></script>    
+    <script src="scripts/generate-youtube-code.js" type="text/javascript"></script>
+    </body>
+</html> 
